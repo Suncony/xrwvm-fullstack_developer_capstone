@@ -1,173 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dealerships - Contact Us</title>
-    <!-- Link to the provided style.css -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Additional embedded styles to match the sample image specifically -->
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f8f9fa;
-        }
-
-        /* Top Navigation Bar */
-        .navbar {
-            background-color: #51c2cb; /* Teal color matching the sample */
-            display: flex;
-            align-items: center;
-            padding: 15px 30px;
-        }
-
-        .navbar-brand {
-            font-size: 28px;
-            font-weight: bold;
-            color: #1a1a1a;
-            margin-right: 40px;
-            text-decoration: none;
-        }
-
-        .navbar a.nav-link {
-            color: #444;
-            text-decoration: none;
-            margin-right: 25px;
-            font-size: 16px;
-        }
-
-        .navbar a.nav-link.active {
-            font-weight: bold;
-            color: #000;
-        }
-
-        /* Main Content Container (mimicking the card with shadow) */
-        .contact-box {
-            background: #ffffff;
-            max-width: 900px;
-            margin: 50px auto;
-            border-radius: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            border: 2px solid #ccc;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Top Image Area pointing to static folder */
-        .image-banner {
-            position: relative;
-            width: 100%;
-            height: 250px;
-            background-image: url('/static/cars.jpeg'); /* Updated path */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Bottom Row Split layout */
-        .info-row {
-            display: flex;
-            padding: 50px 30px;
-            align-items: center;
-        }
-
-        .icon-column {
-            flex: 1;
-            text-align: center;
-            border-right: 2px solid #333;
-        }
-
-        .text-column {
-            flex: 1;
-            text-align: center;
-            padding-left: 20px;
-        }
-
-        /* Local Support Image styling */
-        .support-img {
-            width: 140px;
-            height: auto;
-        }
-
-        /* Text styling */
-        .contact-details p {
-            margin: 10px 0;
-            line-height: 1.5;
-            color: #4a7db3;
-            font-size: 15px;
-        }
-
-        .contact-details p strong {
-            display: block;
-            color: #555;
-            font-weight: 600;
-        }
-
-        .contact-details a {
-            color: #4a7db3;
-            text-decoration: none;
-        }
-
-        .contact-details a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
-<body>
-
-    <!-- Header Navigation Bar -->
-    <nav class="navbar">
-        <a href="/" class="navbar-brand">Dealerships</a>
-        <a href="/" class="nav-link">Home</a>
-        <a href="/about/" class="nav-link">About Us</a>
-        <a href="/contact/" class="nav-link active">Contact Us</a>
-    </nav>
-
-    <!-- Main Content Area -->
-    <div class="contact-box">
-        
-        <!-- Header Image (Sample text removed) -->
-        <div class="image-banner"></div>
-
-        <!-- Contact Information Row -->
-        <div class="info-row">
-            
-            <!-- Left Side: Local Customer Support Image from static folder -->
-            <div class="icon-column">
-                <img src="/static/contactus.png" alt="Contact Us" class="support-img">
-            </div>
-
-            <!-- Right Side: Contact Details -->
-            <div class="text-column contact-details">
-                <p>
-                    <strong>Contact Customer Service</strong>
-                    <a href="mailto:support@bestcars.com">support@bestcars.com</a>
-                </p>
-                <p>
-                    <strong>Contact our National Advertising team</strong>
-                    <a href="mailto:NationalSales@bestcars.com">NationalSales@bestcars.com</a>
-                </p>
-                <p>
-                    <strong>Contact our Public Relations team</strong>
-                    <a href="mailto:PR@bestcars.com">PR@bestcars.com</a>
-                </p>
-                <p>
-                    <strong>Contact the bestcars.com offices</strong>
-                    312-611-1111
-                </p>
-                <p>
-                    <strong>Become a bestcars.com car dealer</strong>
-                    <a href="http://growwithbestcars.com" target="_blank">Visit growwithbestcars.com</a>
-                </p>
-            </div>
-            
-        </div>
+<div>
+  <!-- Navbar template mirrored from About.html with Contact Us set to active -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  
+  <!-- Outer wrapper card matching the 80% auto width from About.html -->
+  <div class="card" style="width: 80%; margin: auto; margin-top:5%;">
+    
+    <!-- Local cars header image matching the standard style.css rules (60% width, centered) -->
+    <img src="/static/cars.jpeg" alt="Dealership Cars">
 
-</body>
+    <!-- Information layout row using the exact style.css rule definitions -->
+    <div class="row">
+      
+      <!-- Left side layout column container with custom dividing border to match mock image -->
+      <div class="container" style="flex: 1; text-align: center; border-right: 2px solid #ccc; display: flex; align-items: center; justify-content: center;">
+        <img src="/static/contactus.png" alt="Contact Us" style="width: 140px; height: auto;">
+      </div>
+
+      <!-- Right side text content utilizing style.css '.details' class for sizing and fonts -->
+      <div class="details" style="flex: 1; text-align: center;">
+        <p>
+          <strong style="display: block; color: #555;">Contact Customer Service</strong>
+          <a href="mailto:support@bestcars.com" style="text-decoration: none;">support@bestcars.com</a>
+        </p>
+        <p>
+          <strong style="display: block; color: #555;">Contact our National Advertising team</strong>
+          <a href="mailto:NationalSales@bestcars.com" style="text-decoration: none;">NationalSales@bestcars.com</a>
+        </p>
+        <p>
+          <strong style="display: block; color: #555;">Contact our Public Relations team</strong>
+          <a href="mailto:PR@bestcars.com" style="text-decoration: none;">PR@bestcars.com</a>
+        </p>
+        <p>
+          <strong style="display: block; color: #555;">Contact the bestcars.com offices</strong>
+          312-611-1111
+        </p>
+        <p>
+          <strong style="display: block; color: #555;">Become a bestcars.com car dealer</strong>
+          <a href="http://growwithbestcars.com" target="_blank" style="text-decoration: none;">Visit growwithbestcars.com</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
 </html>
